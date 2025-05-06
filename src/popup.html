@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prompt Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Prompt Manager</h1>
+      <button id="addPromptBtn" class="btn primary">Add New Prompt</button>
+    </header>
+    
+    <div id="promptList" class="prompt-list">
+      <!-- Prompts will be dynamically added here -->
+    </div>
+
+    <!-- Add Prompt Modal -->
+    <div id="addPromptModal" class="modal">
+      <div class="modal-content">
+        <h2>Add New Prompt</h2>
+        <form id="addPromptForm">
+          <div class="form-group">
+            <label for="promptTitle">Title</label>
+            <input type="text" id="promptTitle" required>
+          </div>
+          <div class="form-group">
+            <label for="promptContent">Content</label>
+            <textarea id="promptContent" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn" id="cancelBtn">Cancel</button>
+            <button type="submit" class="btn primary">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
